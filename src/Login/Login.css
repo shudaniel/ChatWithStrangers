@@ -1,14 +1,30 @@
-@media all and (min-width: 480px) {
-  .Login {
-    margin: 0 auto;
-    padding: 60px 0;
-    max-width: 320px;
-  }
 
-  .Login-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-  }
+.login-root {
+    height: '100vh',
+}
+
+.login-image {
+    backgroundImage: 'url(https://source.unsplash.com/random)',
+    backgroundColor:
+        theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+}
+.login-paper {
+    margin: theme.spacing(8, 4),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+}
+.login-avatar {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+}
+.login-form {
+    width: 100%, 
+    marginTop: theme.spacing(1),
+}
+
+.login-submit {
+    margin: theme.spacing(3, 0, 2),
 }
