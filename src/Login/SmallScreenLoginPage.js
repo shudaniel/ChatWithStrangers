@@ -7,7 +7,6 @@ import "./Login.css";
 
 class SmallScreenLoginPage extends Component {
 
-
     render() {
         return (
             <div>
