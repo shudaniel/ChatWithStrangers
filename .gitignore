@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.env
+
+chatwithstrangers-5244d-firebase-adminsdk-zq1ie-32cd651099.json
