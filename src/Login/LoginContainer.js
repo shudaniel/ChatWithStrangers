@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
-import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -26,7 +26,7 @@ function Copyright() {
   );
 }
 
-class Login extends Component {
+class LoginContainer extends Component {
     constructor(props) {
         super(props)
 
@@ -35,10 +35,8 @@ class Login extends Component {
 
     render() {
         return (
-        <Grid container component="main" className="login-root">
+            <Container className="login-color " component="main" >
             <CssBaseline />
-            <Grid item xs={false} sm={4} md={7} className="login-image" />
-            <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
             <div className="login-paper">
                 <Avatar className="login-avatar">
                 <LockOutlinedIcon />
@@ -94,15 +92,14 @@ class Login extends Component {
                     </Link>
                     </Grid>
                 </Grid>
-                <Box mt={5}>
-                    <Copyright />
-                </Box>
                 </form>
             </div>
-            </Grid>
-        </Grid>
+            <Box mt={8}>
+                <Copyright />
+            </Box>
+        </Container>
         );
     }
 }
 
-export default Login;
+export default LoginContainer;
