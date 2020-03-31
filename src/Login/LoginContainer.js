@@ -11,6 +11,8 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
+import SignInGoogle from './SignInGoogle'
 import './Login.css'
 
 function Copyright() {
@@ -35,7 +37,7 @@ class LoginContainer extends Component {
 
     render() {
         return (
-            <Container className="login-color " component="main" >
+            <Container className="login-color" component="main" >
             <CssBaseline />
             <div className="login-paper">
                 <Avatar className="login-avatar">
@@ -44,7 +46,7 @@ class LoginContainer extends Component {
                 <Typography component="h1" variant="h5">
                 Sign in
                 </Typography>
-                <form className="login-form" noValidate>
+                <div className="login-form">
                 <TextField
                     variant="outlined"
                     margin="normal"
@@ -92,7 +94,9 @@ class LoginContainer extends Component {
                     </Link>
                     </Grid>
                 </Grid>
-                </form>
+                <Divider className="login-divider" light />
+                <SignInGoogle />
+                </div>
             </div>
             <Box mt={8}>
                 <Copyright />

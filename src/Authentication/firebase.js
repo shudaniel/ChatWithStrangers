@@ -14,11 +14,11 @@ const config = {
 class Firebase {
   constructor() {
     console.log("Firebase constructor");
-
     app.initializeApp(config);
-    console.log(app);
+
     /* Helper */
 
+    this.serverValue = app.database.ServerValue;
     this.emailAuthProvider = app.auth.EmailAuthProvider;
 
     /* Firebase APIs */

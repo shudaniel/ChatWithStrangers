@@ -46,3 +46,8 @@
     margin-top: 3% !important;
     margin-left: 3% !important;
 }
+
+.login-divider {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
