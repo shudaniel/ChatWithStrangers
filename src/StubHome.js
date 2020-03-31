@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LogoutButton from './Logout/LogoutButton';
 
 function StubHome() {
     return (
@@ -9,7 +10,7 @@ function StubHome() {
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
                     Edit <code>src/App.js</code> and save to reload.
-        </p>
+                </p>
                 <a
                     className="App-link"
                     href="https://reactjs.org"
@@ -17,7 +18,8 @@ function StubHome() {
                     rel="noopener noreferrer"
                 >
                     Learn React
-        </a>
+                </a>
+                <LogoutButton />
             </header>
         </div>
     );
